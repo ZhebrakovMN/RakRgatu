@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="265.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="236.0" minHeight="10.0" prefHeight="211.8" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="121.4" minHeight="10.0" prefHeight="53.19999999999999" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+        <TableView fx:id="tabCont" prefHeight="150.0" prefWidth="646.0">
+            <columns>
+                <TableColumn fx:id="c1Column" prefWidth="128.0" resizable="false" text="C1" />
+                <TableColumn fx:id="c2Column" prefWidth="128.0" resizable="false" text="C2" />
+                <TableColumn fx:id="c3Column" prefWidth="128.0" resizable="false" text="C3" />
+                <TableColumn fx:id="c4Column" prefWidth="128.0" resizable="false" text="C4" />
+                <TableColumn fx:id="c5Column" prefWidth="128.0" resizable="false" text="C5" />
+            </columns>
+        </TableView>
+        <Button fx:id="submit" layoutX="10.0" layoutY="158.0" mnemonicParsing="false" onAction="#onRandomMethod" prefHeight="45.0" prefWidth="196.0" text="Заполнить случайными числами" />
+        <Button fx:id="count" layoutX="214.0" layoutY="158.0" mnemonicParsing="false" onAction="#onCountMethod" prefHeight="46.0" prefWidth="126.0" text="Выполнить задание" />
+        <Label layoutX="353.0" layoutY="162.0" text="Максимальный элемент:" />
+        <Label layoutX="353.0" layoutY="185.0" prefHeight="18.0" prefWidth="136.0" text="Минимальный элемент:" />
+        <Label fx:id="max" layoutX="495.0" layoutY="162.0" prefHeight="11.0" prefWidth="136.0" />
+        <Label fx:id="min" layoutX="495.0" layoutY="185.0" prefHeight="11.0" prefWidth="136.0" />
+    </AnchorPane>
+    <AnchorPane prefHeight="110.0" prefWidth="656.0" GridPane.rowIndex="1">
+        <Label fx:id="mes" layoutX="56.0" layoutY="4.0" prefHeight="46.0" prefWidth="531.0" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="Arial" size="11.0" />
+            </font>
+        </Label>
+    </AnchorPane>
+</GridPane>
