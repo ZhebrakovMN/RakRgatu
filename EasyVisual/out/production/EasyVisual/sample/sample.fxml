@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="main.css"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="283.0" prefWidth="600.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <Label layoutX="17.0" layoutY="28.0" prefHeight="18.0" prefWidth="21.0" text="X =" />
+   <Label layoutX="14.0" layoutY="78.0" prefHeight="18.0" prefWidth="28.0" text="A =" />
+   <Label layoutX="14.0" layoutY="126.0" prefHeight="18.0" prefWidth="28.0" text="B =" />
+   <Button fx:id="submit" layoutX="16.0" layoutY="168.0" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="50.0" prefWidth="113.0" text="Решить" />
+   <Button fx:id="reset" layoutX="143.0" layoutY="168.0" mnemonicParsing="false" onAction="#onClearMethod" prefHeight="50.0" prefWidth="113.0" text="Очистить" />
+   <Label layoutX="19.0" layoutY="241.0" prefHeight="18.0" prefWidth="39.0" text="Ответ:" />
+   <TextField fx:id="result" editable="false" layoutX="62.0" layoutY="231.0" prefHeight="40.0" prefWidth="523.0" />
+   <Button fx:id="quit" layoutX="472.0" layoutY="168.0" mnemonicParsing="false" onAction="#onExitMethod" prefHeight="50.0" prefWidth="113.0" text="Выход" />
+   <TextField layoutX="39.0" layoutY="17.0" prefHeight="40.0" prefWidth="220.0" fx:id="x" />
+   <TextField fx:id="a" layoutX="39.0" layoutY="67.0" prefHeight="40.0" prefWidth="220.0" />
+   <TextField fx:id="b" layoutX="39.0" layoutY="116.0" prefHeight="40.0" prefWidth="220.0" />
+   <ImageView fitHeight="137.0" fitWidth="316.0" layoutX="268.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@formula.png" />
+      </image>
+   </ImageView>
+   <Label fx:id="answer" layoutX="268.0" layoutY="155.0" prefHeight="63.0" prefWidth="192.0" style="-fx-border-color: black; -fx-text-fill: red;" text="Label" textAlignment="CENTER" wrapText="true">
+      <font>
+         <Font name="Arial Bold" size="11.0" />
+      </font></Label>
+</AnchorPane>
